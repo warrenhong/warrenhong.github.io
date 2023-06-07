@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">hello</header>
-      <button onClick={onClick}>send data to airkit</button>
+      <button className="button" onClick={onClick}>send data to airkit</button>
     </div>
   );
 }

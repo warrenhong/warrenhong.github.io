@@ -19,12 +19,17 @@ function App() {
       }
     }
     window.postMessage(payload,URL)
+    window.parent.postMessage(payload,URL)
+
+    const d = (document.getElementById("iframe") as HTMLIFrameElement).contentWindow
+    d?.postMessage(payload,URL)
   }
 
   return (
     <div className="App">
       <header className="App-header">hello</header>
       <button className="button" onClick={onClick}>send data to airkit</button>
+      <iframe src={URL} title={"de"} id={"iframe"}/>
     </div>
   );
 }

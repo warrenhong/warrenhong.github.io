@@ -9,7 +9,7 @@ function App() {
 
   }, []);
 
-  const URL = "https://app.ruist.com/l/goEx"
+  const URL = "https://app.ruist.com/l/goFD"
 
   const onClick = () => {
     const payload = {
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">hello</header>
+      <header className="App-header">YOOOO</header>
       <button className="button" onClick={onClick}>send data to airkit</button>
       <iframe src={URL} title={"de"} id={"iframe"}/>
     </div>
